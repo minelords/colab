@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Organic food HTML Template">
+
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="static/css/css2.css" rel="stylesheet">
+<!-- CSS -->
+
+<link rel="stylesheet" href="static/css/swiper-bundle.min.css">
+<link rel="stylesheet" href="static/css/photoswipe.css">
+<link rel="stylesheet" href="static/css/card.css">
+<link rel="stylesheet" href="static/css/prism.css">
+<link rel="stylesheet" href="static/css/aos.css">
+<link rel="stylesheet" href="static/css/bootstrap-icons.min.css">
+<link rel="stylesheet" href="static/css/main.css">
+<title>belfshift - Responsive Landing Bootstrap 5 Template</title>
+
+
+</head>
+<body class="cover-container">
+
+
+<!-- Modal Newsletter Vertical  -->
+<div class="modal fade modal-fullscreen-md-down style-black" id="modalNewsletterhorizontal" tabindex="-1" aria-labelledby="modalNewsletterhorizontal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-image have-overlay overlay-white overlay-white-2" style="background-image: url('static/image/banner-shop.jpg');">
+            <div class="modal-body position-relative z-index-9">
+                <!-- Image -->
+                <button type="button" class="btn-close m-3 end-0 text-reset position-absolute hover-rotate" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="px-3 px-lg-5 py-5 text-center">
+                    <h4 class="mb-1">This is the</h4>
+                    <h2 class="mb-0 display-3">Best 10% OFF</h2>
+                    <h4 class="mb-3">you'll use this month.</h4>
+                    <p class="mb-3 fs-18">
+                        Sign up for our emails and new offers.<br>
+                        0% spammy, 100% for you.</p>
+                    <!--Form-->
+                    <form action="index.html" name="newslettervertical">
+
+                        <input type="text" class="form-control rounded-0 mb-2" id="f-email-newsletter10" placeholder="Email">
+                        <button type="submit" class="btn btn-primary w-100 mw-auto px-3 mb-2">Sign Up for 10%
+                            OFF
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- Modal Newsletter Vertical  -->
+<div class="modal fade modal-fullscreen-md-down" id="modalNewsletterVertical" tabindex="-1" aria-labelledby="modalNewsletterVertical" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body position-relative p-0">
+                <!-- Image -->
+                <button type="button" class="btn-close m-3 end-0 text-reset position-absolute hover-rotate" data-bs-dismiss="modal" aria-label="Close"></button>
+                <img alt="img" src="static/picture/banner-shop.jpg" loading="lazy" class="img-fluid w-100" width="1920" height="700">
+
+
+                <div class="px-3 pt-5 pb-3 text-center">
+                    <h3 class="mb-3">Welcome Offer 10% Off</h3>
+                    <p class="mb-4">
+                        Shop over 180 USD and get a Jump Rope (valued at 29 USD) with your order. *Offer valid until
+                        stocks last.</p>
+                    <!--Form-->
+                    <form action="index.html" name="newslettervertical">
+                        <input type="text" class="form-control rounded-0 mb-2" id="f-email-newsletter2" placeholder="Your email address">
+                        <button type="submit" class="btn btn-primary w-100 rounded-0 mw-auto px-3 mb-2" aria-label="Sign Up">Sign Up
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!--Modal Photo Swipe -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+            It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen" aria-label="Fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out" aria-label="Zoom"></button>
+
+
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- OffCanvas Menu Canvas -->
+
+<div class="offcanvas offcanvas-menu offcanvas-end border-end-0" tabindex="-1" id="MenuCanvas" aria-labelledby="MenuCanvas">
+    <div class="offcanvas-header border-bottom">
+        <!--Heading-->
+        <div class="w-50">
+            <div class="dark-v">
+                <!--Brand-->
+                <a aria-label="link" class="navbar-brand d-inline-block m-0" href="index.html">
+                    <h1 class="m-0 d-flex align-items-center">
+                        <img alt="img" src="static/picture/logo.png" loading="lazy" class="img-fluid " width="830" height="474">
+
+
+                    </h1>
+                </a>
+
+            </div>
+            <div class="light-v">
+                <a aria-label="link" class="navbar-brand d-inline-block m-0" href="index.html">
+                    <h1 class="m-0 d-flex align-items-center">
+                        <img alt="img" src="static/picture/logo-white.png" loading="lazy" class="img-fluid " width="830" height="474">
+
+
+                    </h1>
+                </a>
+            </div>
+        </div>
+        <!--Button Close-->
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="navbar-nav-canvas">
+            <!-- Nav -->
+<ul class="navbar-nav navbar-nav-menu flex-wrap ">
+    <li class="dropdown">
+        <a aria-label="link" class="nav-link dropdown-toggle" href="index.html">Landings</a>
+        <ul class="dropdown-menu">
+            <li>
+                <a aria-label="link" class="nav-link" href="index-agency.html">Agency</a>
+            </li>
+            <li>
+                <a aria-label="link" class="nav-link" href="index-sass.html">Sass</a>
+            </li>
+            <li>
+                <a aria-label="link" class="nav-link" href="index-portfolio.html">Portfolio</a>
+            </li>
+            <li>
+                <a aria-label="link" class="nav-link" href="index-ecommerce.html">ECommerce</a>
+            </li>
+        </ul>
+    </li>
+    <li class="dropdown mega-menu mega-menu-2col">
+        <a aria-label="link" class="nav-link dropdown-toggle" href="#">Pages</a>
+        <ul class="dropdown-menu">
+            <li class="dropdown">
+                <a aria-label="link" class="nav-link dropdown-toggle" href="#">Company
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                Hot
+                              </span></a>
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a aria-label="link" class="nav-link position-relative d-inline-block" href="portfolio.html">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link position-relative d-inline-block" href="portfolio-details.html">
+                            Portfolio Details
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link position-relative d-inline-block" href="pricing.html">
+                            Pricing
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link position-relative d-inline-block" href="about.html">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link position-relative d-inline-block" href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link position-relative d-inline-block" href="faqs.html">
+                            FAQs
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a aria-label="link" class="nav-link dropdown-toggle" href="#">Utilities
+                </a>
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a aria-label="link" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalNewsletterhorizontal" href="#">Newsletter v1</a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalNewsletterVertical" href="#">Newsletter v2</a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link" data-toggle="modal" data-bs-toggle="offcanvas" data-bs-target="#modalCart" href="#">Minicart</a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link position-relative d-inline-block" href="">
+                            404
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link position-relative d-inline-block" href="coming-soon.html">
+                            Coming Soon
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li class="dropdown view-left-1199">
+        <a aria-label="link" class="nav-link dropdown-toggle" href="account-profile.html">Account</a>
+        <ul class="dropdown-menu">
+            <li>
+                <a aria-label="link" class="nav-link" href="account-login.html">Login</a>
+            </li>
+            <li>
+                <a aria-label="link" class="nav-link" href="account-register.html">Register</a>
+            </li>
+
+            <li class="dropdown">
+                <a aria-label="link" class="nav-link dropdown-toggle" href="account-profile.html">Account</a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="nav-link" href="account-profile.html">Profile</a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link" href="account-orders.html">Orders</a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link" href="account-order.html">Order
+                            Details</a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link" href="account-wishlist.html">Wishlist</a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link" href="account-address.html">Address</a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link" href="account-address-detail.html">Address
+                            Details</a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link" href="account-payment.html">Payment</a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link" href="account-payment-detail.html">Payment
+                            Details</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li class="dropdown view-left-1199">
+        <a aria-label="link" class="nav-link dropdown-toggle" href="shop.html">Shop</a>
+        <ul class="dropdown-menu">
+            <li>
+                <a aria-label="link" class="nav-link" href="shop.html">Shop Grid</a>
+            </li>
+            <li>
+                <a aria-label="link" class="nav-link" href="shop-list.html">Shop List</a>
+            </li>
+            <li>
+                <a aria-label="link" class="nav-link" href="product.html">Product</a>
+            </li>
+            <li>
+                <a aria-label="link" class="nav-link" href="checkout.html">Checkout</a>
+            </li>
+            <li>
+                <a aria-label="link" class="nav-link" href="shopping-cart.html">Shopping Cart</a>
+            </li>
+            <li>
+                <a aria-label="link" class="nav-link" href="order-completed.html">Order Completed</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a aria-label="link" class="nav-link" href="docs.html">Docs</a>
+    </li>
+</ul>
+<!-- end Nav -->
+        </div>
+
+    </div>
+    <div class="offcanvas-footer">
+        <!--List inline Socials-->
+        <ul class="list-inline list-inline-circle mb-0">
+            <li class="list-inline-item mt-1 mb-1"><a aria-label="link" href="shop.html"><i class="list-inline-icon-border bi bi-facebook"></i></a></li>
+            <li class="list-inline-item mt-1 mb-1"><a aria-label="link" href="shop.html"><i class="list-inline-icon-border bi bi-twitter"></i></a></li>
+            <li class="list-inline-item mt-1 mb-1"><a aria-label="link" href="shop.html"><i class="list-inline-icon-border bi bi-instagram"></i></a>
+            </li>
+            <li class="list-inline-item mt-1 mb-1"><a aria-label="link" href="shop.html"><i class="list-inline-icon-border bi bi-youtube"></i></a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-end widget-mini-cart" tabindex="-1" id="modalCart" aria-labelledby="modalCart">
+    <div class="offcanvas-header border-bottom">
+        <!--Heading-->
+        <h6 class="mb-0 me-2 text-uppercase fs-18 font-body fw-bold">Shopping cart</h6>
+        <!--Button Close-->
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="content-padding">
+            <ul class="list-group list-group-flush">
+                <!--Item Product-->
+
+
+
+
+<!--Item product-->
+
+<li class="list-group-item hover-scale-image px-0 pb-3 pt-0 mb-3 ">
+    <div class="row gx-3 flex-wrap">
+        <div class="col-3">
+            <a aria-label="link" class="overflow-hidden w100-image" href="product.html">
+                <img alt="img" src="static/picture/product-1.png" loading="lazy" class="img-fluid " width="1500" height="2000">
+
+
+            </a>
+        </div>
+        <div class="col-9 d-flex justify-content-between align-items-center">
+            <div class="row gx-3 w-100">
+                <div class="col-12 col-sm-7">
+                    <h6 class="mb-2 card-title fw-normal fs-14"><a class="text-decoration-none" href="product.html"><span>Dining chairs</span></a></h6>
+                    <h6 class="mb-2 product-price fs-14">
+                        <del class="me-1 opacity-75">$89.00</del>
+                        <span>$79.00</span>
+                    </h6>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="d-flex flex-no-wrap js-quantity align-items-center mb-2">
+
+    
+    <label class="me-3 d-none">Qty:</label>
+    
+    <div class="quantity-wrap">
+        <div class="quanity-btn button-minus">
+            <i class="bi bi-dash"></i>
+        </div>
+        <input type="number" step="1" max="100" value="1" name="quantity" class="quantity-field text-center border-0">
+        <div class="quanity-btn button-plus">
+            <i class="bi bi-plus"></i>
+        </div>
+    </div>
+
+</div>
+                    <a aria-label="link" class="remove text-uppercase letter-spacing-1 hover-underline small d-inline-block fs-12" href="#">
+                        Remove
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</li>
+
+
+
+<!--Item product-->
+
+<li class="list-group-item hover-scale-image px-0 pb-3 pt-0 mb-3 ">
+    <div class="row gx-3 flex-wrap">
+        <div class="col-3">
+            <a aria-label="link" class="overflow-hidden w100-image" href="product.html">
+                <img alt="img" src="static/picture/product-3.png" loading="lazy" class="img-fluid " width="1500" height="2000">
+
+
+            </a>
+        </div>
+        <div class="col-9 d-flex justify-content-between align-items-center">
+            <div class="row gx-3 w-100">
+                <div class="col-12 col-sm-7">
+                    <h6 class="mb-2 card-title fw-normal fs-14"><a class="text-decoration-none" href="product.html"><span>Bedside Table</span></a></h6>
+                    <h6 class="mb-2 product-price fs-14">
+                        <del class="me-1 opacity-75">$89.00</del>
+                        <span>$79.00</span>
+                    </h6>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="d-flex flex-no-wrap js-quantity align-items-center mb-2">
+
+    
+    <label class="me-3 d-none">Qty:</label>
+    
+    <div class="quantity-wrap">
+        <div class="quanity-btn button-minus">
+            <i class="bi bi-dash"></i>
+        </div>
+        <input type="number" step="1" max="100" value="1" name="quantity" class="quantity-field text-center border-0">
+        <div class="quanity-btn button-plus">
+            <i class="bi bi-plus"></i>
+        </div>
+    </div>
+
+</div>
+                    <a aria-label="link" class="remove text-uppercase letter-spacing-1 hover-underline small d-inline-block fs-12" href="#">
+                        Remove
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</li>
+
+
+
+<!--Item product-->
+
+<li class="list-group-item hover-scale-image px-0 pb-3 pt-0 mb-3 ">
+    <div class="row gx-3 flex-wrap">
+        <div class="col-3">
+            <a aria-label="link" class="overflow-hidden w100-image" href="product.html">
+                <img alt="img" src="static/picture/product-4.png" loading="lazy" class="img-fluid " width="1500" height="2000">
+
+
+            </a>
+        </div>
+        <div class="col-9 d-flex justify-content-between align-items-center">
+            <div class="row gx-3 w-100">
+                <div class="col-12 col-sm-7">
+                    <h6 class="mb-2 card-title fw-normal fs-14"><a class="text-decoration-none" href="product.html"><span>Nordic chair</span></a></h6>
+                    <h6 class="mb-2 product-price fs-14">
+                        <del class="me-1 opacity-75">$89.00</del>
+                        <span>$79.00</span>
+                    </h6>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="d-flex flex-no-wrap js-quantity align-items-center mb-2">
+
+    
+    <label class="me-3 d-none">Qty:</label>
+    
+    <div class="quantity-wrap">
+        <div class="quanity-btn button-minus">
+            <i class="bi bi-dash"></i>
+        </div>
+        <input type="number" step="1" max="100" value="1" name="quantity" class="quantity-field text-center border-0">
+        <div class="quanity-btn button-plus">
+            <i class="bi bi-plus"></i>
+        </div>
+    </div>
+
+</div>
+                    <a aria-label="link" class="remove text-uppercase letter-spacing-1 hover-underline small d-inline-block fs-12" href="#">
+                        Remove
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</li>
+
+
+<!--End Item Product-->
+            </ul>
+        </div>
+
+    </div>
+    <div class="offcanvas-footer border-top py-3 px-3 px-lg-5">
+        <div class="d-flex flex-nowrap justify-content-between align-items-center mb-2">
+                <p class="letter-spacing-1 mb-1 opacity-75">Subtotal:</p>
+                <h5 class="h5">$480.00</h5>
+        </div>
+        <!--link-->
+        <div class="text-center">
+            <a aria-label="link" class="btn btn-primary w-100 mb-2" href="checkout.html"><span>Check Out</span></a>
+            <a aria-label="link" class="hover-underline text-uppercase fs-sm" href="shopping-cart.html">View Cart</a>
+        </div>
+    </div>
+</div>
+<header class=" mode header-fixed border-bottom" data-aos="aos-slideup">
+    <nav class="navbar navbar-main navbar-expand-lg flex-column">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between w-100 position-relative">
+                <div class="py-2">
+                    
+                    
+                    
+                    <div class="dark-v">
+                        <!--Brand-->
+                        <a aria-label="link" class="navbar-brand d-inline-block m-0" href="index.html">
+                            <h2 class="m-0 d-flex align-items-center">
+                                <img alt="img" src="static/picture/logo.png" loading="lazy" class="img-fluid " width="163" height="42">
+
+
+                            </h2>
+                        </a>
+
+                    </div>
+                    <div class="light-v">
+                        <a aria-label="link" class="navbar-brand d-inline-block m-0" href="index.html">
+                            <h2 class="m-0 d-flex align-items-center">
+                                <img alt="img" src="static/picture/logo-white.png" loading="lazy" class="img-fluid " width="163" height="42">
+
+
+                            </h2>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="mx-3 ps-3 mx-xl-5 ps-xl-5 border-start border-start-md-0 d-none d-lg-flex justify-content-center flex-grow-1">
+                    <div class="collapse navbar-collapse" id="navbarPrimary">
+                        <!-- Nav -->
+<ul class="navbar-nav navbar-nav-menu flex-wrap ">
+    <li class="dropdown">
+        <a aria-label="link" class="nav-link dropdown-toggle" href="index.html">Landings</a>
+        <ul class="dropdown-menu">
+            <li>
+                <a aria-label="link" class="nav-link" href="index-agency.html">Agency</a>
+            </li>
+            <li>
+                <a aria-label="link" class="nav-link" href="index-sass.html">Sass</a>
+            </li>
+            <li>
+                <a aria-label="link" class="nav-link" href="index-portfolio.html">Portfolio</a>
+            </li>
+            <li>
+                <a aria-label="link" class="nav-link" href="index-ecommerce.html">ECommerce</a>
+            </li>
+        </ul>
+    </li>
+    <li class="dropdown mega-menu mega-menu-2col">
+        <a aria-label="link" class="nav-link dropdown-toggle" href="#">Pages</a>
+        <ul class="dropdown-menu">
+            <li class="dropdown">
+                <a aria-label="link" class="nav-link dropdown-toggle" href="#">Company
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                Hot
+                              </span></a>
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a aria-label="link" class="nav-link position-relative d-inline-block" href="portfolio.html">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link position-relative d-inline-block" href="portfolio-details.html">
+                            Portfolio Details
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link position-relative d-inline-block" href="pricing.html">
+                            Pricing
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link position-relative d-inline-block" href="about.html">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link position-relative d-inline-block" href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link position-relative d-inline-block" href="faqs.html">
+                            FAQs
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a aria-label="link" class="nav-link dropdown-toggle" href="#">Utilities
+                </a>
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a aria-label="link" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalNewsletterhorizontal" href="#">Newsletter v1</a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalNewsletterVertical" href="#">Newsletter v2</a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link" data-toggle="modal" data-bs-toggle="offcanvas" data-bs-target="#modalCart" href="#">Minicart</a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link position-relative d-inline-block" href="">
+                            404
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link position-relative d-inline-block" href="coming-soon.html">
+                            Coming Soon
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li class="dropdown view-left-1199">
+        <a aria-label="link" class="nav-link dropdown-toggle" href="account-profile.html">Account</a>
+        <ul class="dropdown-menu">
+            <li>
+                <a aria-label="link" class="nav-link" href="account-login.html">Login</a>
+            </li>
+            <li>
+                <a aria-label="link" class="nav-link" href="account-register.html">Register</a>
+            </li>
+
+            <li class="dropdown">
+                <a aria-label="link" class="nav-link dropdown-toggle" href="account-profile.html">Account</a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="nav-link" href="account-profile.html">Profile</a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link" href="account-orders.html">Orders</a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link" href="account-order.html">Order
+                            Details</a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link" href="account-wishlist.html">Wishlist</a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link" href="account-address.html">Address</a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link" href="account-address-detail.html">Address
+                            Details</a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link" href="account-payment.html">Payment</a>
+                    </li>
+                    <li>
+                        <a aria-label="link" class="nav-link" href="account-payment-detail.html">Payment
+                            Details</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li class="dropdown view-left-1199">
+        <a aria-label="link" class="nav-link dropdown-toggle" href="shop.html">Shop</a>
+        <ul class="dropdown-menu">
+            <li>
+                <a aria-label="link" class="nav-link" href="shop.html">Shop Grid</a>
+            </li>
+            <li>
+                <a aria-label="link" class="nav-link" href="shop-list.html">Shop List</a>
+            </li>
+            <li>
+                <a aria-label="link" class="nav-link" href="product.html">Product</a>
+            </li>
+            <li>
+                <a aria-label="link" class="nav-link" href="checkout.html">Checkout</a>
+            </li>
+            <li>
+                <a aria-label="link" class="nav-link" href="shopping-cart.html">Shopping Cart</a>
+            </li>
+            <li>
+                <a aria-label="link" class="nav-link" href="order-completed.html">Order Completed</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a aria-label="link" class="nav-link" href="docs.html">Docs</a>
+    </li>
+</ul>
+<!-- end Nav -->
+                        <!-- Nav Icons-->
+                    </div>
+                </div>
+
+                <div class="d-none d-lg-block">
+                    <a class="btn btn-primary btn-sm" href="#">Get it touch</a>
+                </div>
+
+                <div class="d-flex d-lg-none py-2">
+                    <div class="hamburger-menu style-bg style-right" data-toggle="modal" data-bs-toggle="offcanvas" data-bs-target="#MenuCanvas" aria-controls="MenuCanvas">
+    <div class="hamburger-inner">
+        <span></span>
+    </div>
+</div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+
+<main class="section-padding-y h-100">
+    <div class="d-flex align-items-center justify-content-center section-padding-y px-5 text-center">
+    <div class="clearfix">
+        <h1 class="display-1">404</h1>
+        <p class="display-2"><strong>Page not found :(</strong></p>
+        <p class="mb-4 text-secondary">The requested page could not be found.</p>
+        <a class="btn btn-primary" href="index.html">Go to Homepage</a>
+    </div>
+</div>
+</main>
+<!-- JAVASCRIPT -->
+<script src="static/js/dark-mode.js"></script>
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/jquery.youtube-background.min.js"></script>
+<script src="static/js/imagesloaded.pkgd.min.js"></script>
+<script src="static/js/swiper-bundle.min.js"></script>
+<script src="static/js/form-validation.js"></script>
+<script src="static/js/card.js"></script>
+<script src="static/js/aos.js"></script>
+<script src="static/js/parallax.min.js"></script>
+<script src="static/js/masonry.pkgd.min.js"></script>
+<script src="static/js/prism.js"></script>
+<script src="static/js/bootstrap.bundle.min.js"></script>
+<script src="static/js/custom.js"></script>
+</body>
+</html>

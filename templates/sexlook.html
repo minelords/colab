@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>藏宝阁</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        #left-panel {
+            width: 20%;
+            padding: 20px;
+            box-sizing: border-box;
+            border-right: 1px solid #ccc;
+        }
+
+        #right-panel {
+            width: 70%;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* 针对大屏幕的默认布局 */
+        @media (min-width: 768px) {
+            body {
+                flex-direction: row;
+            }
+
+            #left-panel {
+                width: 20%;
+                border-right: 1px solid #ccc;
+            }
+
+            #right-panel {
+                width: 70%;
+            }
+
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        /* 针对移动设备进行调整 */
+        @media (max-width: 767px) {
+            body {
+                flex-direction: column;
+            }
+
+            #left-panel {
+                width: 100%;
+                padding: 10px;
+                border-right: none;
+                border-bottom: 1px solid #ccc;
+            }
+
+            #right-panel {
+                width: 100%;
+            }
+
+            iframe {
+                height: 60vh; /* 给 iframe 固定一个高度比例 */
+            }
+
+            h3 {
+                font-size: 1.2rem;
+            }
+
+            label {
+                font-size: 1rem;
+                margin-bottom: 5px;
+            }
+
+            input[type="text"] {
+                width: calc(100% - 20px);
+                margin-bottom: 10px;
+                padding: 8px;
+                font-size: 1rem;
+            }
+
+            button {
+                padding: 8px 15px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div id="left-panel">
+    <h3>选择标签并显示对应页面</h3>
+    
+    <!-- 勾选标签 0 -->
+    <label>
+        <input type="radio" name="page" value="#" data-name="#"> - HOME
+    </label>
+    <!-- 勾选标签 1 -->
+    <label>
+        <input type="radio" name="page" value="https://sexbjcam.com" data-name="sexbjcam"> - sexbjcam
+    </label>
+    
+    <!-- 勾选标签 2 -->
+    <label>
+        <input type="radio" name="page" value="https://pornavhd.com" data-name="pornavhd"> - pornavhd
+    </label>
+    
+    <!-- 勾选标签 3 -->
+    <label>
+        <input type="radio" name="page" value="https://sexkbj.com/" data-name="sexkbj"> - sexkbj
+    </label>
+
+    <!-- 勾选标签 4 -->
+    <label>
+        <input type="radio" name="page" value="https://netflav.com/" data-name="netflav"> - netflav
+    </label>
+
+    <!-- 勾选标签 5 -->
+    <label>
+        <input type="radio" name="page" value="https://xgroovy.com" data-name="xgroovy"> - xgroovy
+    </label>
+    
+    <!-- 勾选标签 6 -->
+    <label>
+        <input type="radio" name="page" value="https://camcam.cc/" data-name="camcam"> - camcam
+    </label>
+    <!-- 勾选标签 7 -->
+    <label>
+        <input type="radio" name="page" value="http://23.224.77.18/go.js" data-name="baoyu"> - baoyu
+    </label>
+    <br><br>
+    <!-- 输入框和提交按钮 -->
+    <label for="input-url">输入 URL 并提交:</label>
+    <input type="text" id="input-url" placeholder="输入 URL">
+    <button id="submit-url">提交</button>
+</div>
+
+<div id="right-panel">
+    <!-- 嵌入的iframe -->
+    <iframe src="" id="frame"></iframe>
+</div>
+
+<script>
+    const radios = document.querySelectorAll('input[name="page"]');
+    const frame = document.getElementById('frame');
+    const submitBtn = document.getElementById('submit-url');
+    const inputUrl = document.getElementById('input-url');
+    let selectedLabel = '';
+
+    // 添加 change 事件监听器到每个 radio 按钮
+    radios.forEach(radio => {
+        radio.addEventListener('change', function() {
+            selectedLabel = this.dataset.name;
+            const selectedURL = this.value;
+
+            // 标签 4、5、6 在新标签页中打开
+            if (selectedLabel === 'netflav' || 
+                selectedLabel === 'xgroovy' || 
+                selectedLabel === 'camcam') {
+                window.open(selectedURL, '_blank');
+            } 
+            // 标签 'baoyu' 调用 Python 后端方法，获取返回值并加载到 iframe
+            else if (selectedLabel === 'baoyu') {
+                fetch('http://127.0.0.1:5000/baoyu-url')  // 调用 Flask 路由
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();  // 解析为 JSON
+                })
+                .then(data => {
+                    console.log('Received URL:', data.url);  // 输出 URL
+                    const frame = document.getElementById('frame');  // 获取 iframe 元素
+                    frame.src = data.url;  // 设置 iframe 的 src 为获取的 URL
+                })
+                .catch(error => console.error('Error fetching data:', error));
+
+                } 
+            // 其他标签在 iframe 中加载
+            else {
+                // 标签 1、2、3 在 iframe 中加载
+                frame.src = selectedURL;
+            }
+        });
+    });
+
+    // 提交输入框内容到后端
+    submitBtn.addEventListener('click', function() {
+    const url = inputUrl.value;
+
+    // 构造查询字符串
+    const queryString = new URLSearchParams({ url: url }).toString();
+
+    fetch(`http://127.0.0.1:5000/get-url?${queryString}`, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data && data.newUrl) {
+            frame.src = data.newUrl;
+        } else {
+            alert('无效的响应数据');
+        }
+    })
+    .catch(error => {
+        console.error('发生错误:', error);
+    });
+});
+</script>
+
+</body>
+</html>

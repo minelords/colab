@@ -4,9 +4,9 @@ from dplayer import *
 import urllib.parse
 import requests
 from flask_cors import CORS
-from flask_ngrok import run_with_ngrok
+#from flask_ngrok import run_with_ngrok
 app = Flask(__name__)
-run_with_ngrok(app)
+#run_with_ngrok(app)
 CORS(app)
 
 
@@ -49,5 +49,12 @@ def process_url(url):
 @app.route('/')
 def index():
     return render_template('index.html')
-    
+
+@app.route('/sexlook.html')
+def sexlook():
+    return render_template('sexlook.html')
+
+@app.route('/404.html')
+def _404():
+    return render_template('404.html')
 app.run()
