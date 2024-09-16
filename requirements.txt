@@ -1,0 +1,9 @@
+
+flask
+requests
+PyExecJS
+fake_useragent
+pycryptodome
+selenium
+flask_cors
+flask_ngrok
