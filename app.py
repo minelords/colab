@@ -46,7 +46,8 @@ def process_url(url):
     else:
         return url
 
-@app.route("/")
-def home():
-    return "<h1>GFG is great platform to learn</h1>"
-app.run()
+@app.route('/')
+def index():
+    return render_template('index.html')
+    
+app.run(host='0.0.0.0')
